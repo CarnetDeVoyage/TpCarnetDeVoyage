@@ -37,56 +37,54 @@ public class MainActivity extends AppCompatActivity {
         private RecyclerView recyclerView;
 
         private List<MyObject> cities = new ArrayList<>();
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
+fdff
+                                dInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
             //remplir la ville
             ajouterVilles();
 
-            recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-
+            recyclerView = (RecyclerView) fdfdfindViewById(R.id.recyclerView);
+sdds
             //définit l'agencement des cellules, ici de façon verticale, comme une ListView
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+sdsdgsgsg
             //pour adapter en grille comme une RecyclerView, avec 2 cellules par ligne
-            //recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+            //recyclerView.setLayoutManager(new GridLayoutManager(this,2));dfsf
 
             //puis créer un MyAdapter, lui fournir notre liste de villes.
             //cet adapter servira à remplir notre recyclerview
-            recyclerView.setAdapter(new MyAdapter(cities));
+            recyclerView.setAdapter(new MyAdapter(cities));fdfd
         }
 
         private void ajouterVilles() {
-            cities.add(new MyObject("France","http://www.telegraph.co.uk/travel/destination/article130148.ece/ALTERNATES/w620/parisguidetower.jpg"));
+            cities.add(new MyObject("France","httpdffd://www.telegraph.co.uk/travel/destination/article130148.ece/ALTERNATES/w620/parisguidetower.jpg"));
             cities.add(new MyObject("Angleterre","http://www.traditours.com/images/Photos%20Angleterre/ForumLondonBridge.jpg"));
-            cities.add(new MyObject("Allemagne","http://tanned-allemagne.com/wp-content/uploads/2012/10/pano_rathaus_1280.jpg"));
-            cities.add(new MyObject("Espagne","http://www.sejour-linguistique-lec.fr/wp-content/uploads/espagne-02.jpg"));
+            cities.add(new MyObject("Allemagne","http://tandfdsejour-linguistique-lec.fr/wp-content/uploads/espagne-02.jpg"));
             cities.add(new MyObject("Italie","http://retouralinnocence.com/wp-content/uploads/2013/05/Hotel-en-Italie-pour-les-Vacances2.jpg"));
             cities.add(new MyObject("Russie","http://www.choisir-ma-destination.com/uploads/_large_russie-moscou2.jpg"));
         }
 
-    }
+    }fdfd
 
-    @Override
+    @Overridefdffddffdfd
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        return true;fdfd
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // Handle action bar item clicks here. The action badfdr willfdfd
+        // automatically handle clicks on the Home/Up buttfdfdon, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        int id = item.getItemId();fdfd
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            return true;fdfdfdf
         }
 
         return super.onOptionsItemSelected(item);

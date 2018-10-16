@@ -9,12 +9,14 @@ class MyObject {
         this.imageUrl = imageUrl;
     }
 
+
+
     public String getText() {
         return "test";
     }
 
     public Object getImageUrl() {
-    }d
+    }
 
     //getters & setters
 }

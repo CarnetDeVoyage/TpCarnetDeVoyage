@@ -6,5 +6,8 @@ import java.util.List;
 
 class MyAdapter extends RecyclerView.Adapter {
     public MyAdapter(List<MyObject> cities) {
+
+
+        //test
     }
 }
